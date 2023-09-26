@@ -1,6 +1,5 @@
 import useTranslation from "../../../../hooks/useTranslation";
-import { Button } from 'primereact/button';    
-                         
+import { Button } from "primereact/button";                         
 import {
   Content,
   TopInfo,
@@ -66,7 +65,9 @@ const Project = ({
       
 
       </ProjectFooter>
-      <Button label="Info" severity="secondary" rounded />    </Content>
+      <Button label="Info" severity="secondary" rounded />   
+       </Content>
+
   );
 };
 export default Project;
