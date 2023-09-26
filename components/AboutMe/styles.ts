@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Image } from "primereact/image";
 import image from "next/image";
 
 export const Content = styled.section`
@@ -44,7 +44,7 @@ export const TitleName = styled.h1`
   font-family: 'serif';
 `;
 
-export const ImagePersonal = styled(image)`
+export const ImagePersonal = styled(Image)`
 border-radius:80px`;
 
 export const Qualities = styled.div`

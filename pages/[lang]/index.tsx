@@ -4,7 +4,7 @@ import useTranslation from "../../hooks/useTranslation";
 
 import withLocale from "../../hocs/withLocale";
 
-import AboutMe from "../../components/AboutMe";
+import AboutMe from "../../components/AboutMe/AboutMe";
 import Projects from "../../components/Projects";
 
 import {Main} from "../../styles/home";

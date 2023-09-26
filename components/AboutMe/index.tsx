@@ -38,7 +38,7 @@ const AboutMe = () => {
         <span> | </span>
         <span onClick={() => handleLocaleChange("en")}>EN</span>
       </TranslateContainer>
-      <ImagePersonal src='https://avatars.githubusercontent.com/u/87835597?v=4' width={100} height={100} />
+      <ImagePersonal src='https://avatars.githubusercontent.com/u/87835597?v=4'  />
       <TitleName>Douglas S. Leite</TitleName>
       <Qualities>
         <Quality>{t("quality1")}</Quality>
