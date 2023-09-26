@@ -1,6 +1,5 @@
 import {useCallback} from "react";
 import {useRouter} from "next/router";
-
 import useTranslation from "../../hooks/useTranslation";
 import {locales} from "../../translations/config";
 import {
@@ -38,7 +37,8 @@ const AboutMe = () => {
         <span> | </span>
         <span onClick={() => handleLocaleChange("en")}>EN</span>
       </TranslateContainer>
-      <ImagePersonal src='https://avatars.githubusercontent.com/u/87835597?v=4'  />
+
+      <ImagePersonal src='https://avatars.githubusercontent.com/u/87835597?v=4' width={120} height={120}  alt="Imagem Pessoal" />
       <TitleName>Douglas S. Leite</TitleName>
       <Qualities>
         <Quality>{t("quality1")}</Quality>

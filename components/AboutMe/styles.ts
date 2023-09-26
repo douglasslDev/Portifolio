@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { Image } from "primereact/image";
-import image from "next/image";
-
+import Image from "next/image";
 export const Content = styled.section`
   padding: 5% 10%;
   height: 100vh;
@@ -45,7 +43,8 @@ export const TitleName = styled.h1`
 `;
 
 export const ImagePersonal = styled(Image)`
-border-radius:80px`;
+display: flex;
+border-radius: 80px`;
 
 export const Qualities = styled.div`
   margin-top: 10%;
