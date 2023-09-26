@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import {NextPage} from "next";
 import Error from "next/error";
 import { getDisplayName } from "next/dist/shared/lib/utils";
@@ -16,7 +16,6 @@ export default (WrappedPage: NextPage<any>) => {
     }
     return (
       <LocaleProvider lang={locale}>
-        {Children}
         <WrappedPage {...pageProps} />
       </LocaleProvider>
     );

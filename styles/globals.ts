@@ -2,6 +2,7 @@ import {createGlobalStyle} from "styled-components";
 import "primereact/resources/themes/lara-light-indigo/theme.css";     
 import "primereact/resources/primereact.min.css";                                       
 import 'primeicons/primeicons.css';
+
 export const GlobalStyle = createGlobalStyle`
 
   html,

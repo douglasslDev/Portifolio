@@ -10,9 +10,10 @@ interface ContextProps {
 export const LocaleContext = React.createContext<ContextProps>({
   locale: "en",
   setLocale: () => null,
+
 });
 
-export const LocaleProvider: React.FC<{lang: Locale, children:any}> = ({lang, children}) => {
+export const LocaleProvider: React.FC<{lang: Locale}> = ({lang, children}) => {
   const [locale, setLocale] = React.useState(lang);
   const {query} = useRouter();
 
