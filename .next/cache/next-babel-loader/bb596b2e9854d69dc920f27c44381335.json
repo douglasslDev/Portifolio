@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { locales } from \"./config\";\nexport function isLocale(tested) {\n  return locales.some(function (locale) {\n    return locale === tested;\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

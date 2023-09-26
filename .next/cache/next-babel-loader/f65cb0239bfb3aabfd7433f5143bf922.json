@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const Content = styled.footer`\n  display: block;\n  > div {\n    height: 80px;\n    display: flex;\n    background: darkgray;\n    justify-content: center;\n    align-items: center;\n    color: white;\n  }\n`;","map":null,"metadata":{},"sourceType":"module"}

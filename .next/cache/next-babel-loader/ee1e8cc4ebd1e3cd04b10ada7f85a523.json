@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var defaultLocale = \"en\";\nexport var locales = [\"en\", \"pt\"];\nexport var languageNames = {\n  en: \"English\",\n  pt: \"Português\"\n};","map":null,"metadata":{},"sourceType":"module"}
