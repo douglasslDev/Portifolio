@@ -1,5 +1,6 @@
 import useTranslation from "../../../../hooks/useTranslation";
-import { Button } from "primereact/button";                         
+import { Button } from "primereact/button";     
+
 import {
   Content,
   TopInfo,
@@ -12,7 +13,7 @@ import {
   Icon,
 } from "./styles";
 
-interface iProject {
+export interface iProject {
   role: string;
   color: string;
   img: string;
@@ -22,6 +23,7 @@ interface iProject {
   source: string;
   deploy: string;
 }
+
 
 const Project = ({
   role,
@@ -39,7 +41,7 @@ const Project = ({
         <RoleInfo>{role}</RoleInfo>
       </TopInfo>
       <MockUpContainer>
-        <MockUp src={img} type={type} alt={t("projectImage")} />
+        <MockUp src={img}  width={80} height={160} alt={t("projectImage")} />
       </MockUpContainer>
       <ProjectFooter>
         <Presentation>
