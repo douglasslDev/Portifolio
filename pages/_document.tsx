@@ -42,6 +42,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
           />
+          
         </Head>
         <body>
           <Main />
@@ -49,6 +50,7 @@ export default class MyDocument extends Document {
           <script
             async
             src={"https://www.googletagmanager.com/gtag/js?id=UA-167264249-1"}
+            
           />
           <script
             dangerouslySetInnerHTML={{
@@ -61,6 +63,7 @@ export default class MyDocument extends Document {
                   `,
             }}
           />
+          
         </body>
       </Html>
     );

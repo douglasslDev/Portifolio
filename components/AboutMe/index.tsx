@@ -1,5 +1,6 @@
 import {useCallback} from "react";
 import {useRouter} from "next/router";
+import { Button } from "primereact/button";
 import useTranslation from "../../hooks/useTranslation";
 import {locales} from "../../translations/config";
 import {
@@ -75,14 +76,10 @@ const AboutMe = () => {
           className="fas fa-envelope-square fa-2x"
         />
       </IconsContainer>
-      <ButtonContainer>
-        <ContactMe
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://api.whatsapp.com/send?phone=5521966199134&text=Fala%20dev!">
-          {t("contactButton")}
-        </ContactMe>
-      </ButtonContainer>
+      
+      <Button label={t("contactButton")} severity="secondary" onClick={()=>window.open(    'https://wa.me/5521966199134?text=Fala%20dev!'
+)} />   
+
       
     </Content>
   );

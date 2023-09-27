@@ -1,20 +1,13 @@
 import styled from "styled-components";
 import Image from "next/image";
 export const Content = styled.div`
-  background: #0194be;
   display: flex;
   flex-direction: column;
   align-items: center;
  margin-right: 20px;
- border: 1px solid  #0194be;
  border-radius: 30px;
- padding: 20px;
-  &:hover{
-    opacity: 1;
-    border:white solid 1px;
- /*    transform: scale(2); 
-  transition: transform 0.3s ease;  */
-  }
+ padding: 20px; 
+ 
 `;
 
 export const TopInfo = styled.div`
@@ -33,7 +26,9 @@ export const MockUpContainer = styled.div`
 `;
 
 export const MockUp = styled(Image)`
-  justify-content: center;
+  display: flex;
+  
+  object-fit: fill;
   @media (min-width: 990px) {
 
   justify-content: center;
