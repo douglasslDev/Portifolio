@@ -5,15 +5,18 @@ import {Locale, isLocale} from "../translations/myTypes";
 interface ContextProps {
   readonly locale: Locale;
   readonly setLocale: (locale: Locale) => void;
+  readonly children : null,
+
 }
 
 export const LocaleContext = React.createContext<ContextProps>({
   locale: "en",
   setLocale: () => null,
+children: null,
 
 });
 
-export const LocaleProvider: React.FC<{lang: Locale}> = ({lang, children}) => {
+export const LocaleProvider: React.FC <{lang: Locale, children:any}> = ({lang, children}) => {
   const [locale, setLocale] = React.useState(lang);
   const {query} = useRouter();
 
@@ -34,7 +37,7 @@ export const LocaleProvider: React.FC<{lang: Locale}> = ({lang, children}) => {
   }, [query.lang, locale]);
 
   return (
-    <LocaleContext.Provider value={{locale, setLocale}}>
+    <LocaleContext.Provider value={{locale, setLocale, children}}>
       {children}
     </LocaleContext.Provider>
   );
