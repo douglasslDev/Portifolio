@@ -64,7 +64,6 @@ width: 100%;
 export const ProjectsContainerTitle = styled.h1`
 margin-bottom: 30px;
 font-size:30px;
-color: white;
 `;
 
 export const TitleTecAndFrams = styled.h1`
