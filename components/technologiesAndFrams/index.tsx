@@ -18,7 +18,7 @@
 
     return(
       <Content >
-      <CardContainer style={{alignItems:'center', display:'flex', justifyContent:'center', flexDirection:'column'}} >
+      <CardContainer style={{alignItems:'center', display:'flex', justifyContent:'center', flexDirection:'column', color:'white'}} >
       <Typography variant="h6" gutterBottom>
           {label}
         </Typography>
