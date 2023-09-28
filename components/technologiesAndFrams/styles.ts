@@ -9,7 +9,7 @@ export const Content = styled(Card)`
   margin-bottom: 100px;
   border: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-  background:transparent;
+  background:none;
   margin-right: 30px;
 `;
 
