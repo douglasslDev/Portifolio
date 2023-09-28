@@ -4,12 +4,11 @@ import CardContent from '@mui/material/CardContent';
 
 export const Content = styled(Card)`
   display: flex;
-
   padding: 20px;
   margin-bottom: 100px;
   border: none;
+  background: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-  background:none;
   margin-right: 30px;
 `;
 
@@ -19,5 +18,5 @@ display:flex;
 `;
 
 export const CardContainer = styled(CardContent)`
-
+display: flex;
 `;
