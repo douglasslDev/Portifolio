@@ -13,8 +13,8 @@ export const Content = styled(Card)`
 `;
 
 export const TitleContainer = styled.h1`
-color: white;
 display:flex;
+color: black;
 `;
 
 export const CardContainer = styled(CardContent)`

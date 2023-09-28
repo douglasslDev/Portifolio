@@ -3,7 +3,7 @@
   import 'animate.css';
   import CardContent from '@mui/material/CardContent';
   import Typography from '@mui/material/Typography';
-  import {Content, TitleContainer, CardContainer} from "./styles";
+  import {Content, CardContainer} from "./styles";
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import { IconProp } from '@fortawesome/fontawesome-svg-core';
 

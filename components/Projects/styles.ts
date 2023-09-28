@@ -77,11 +77,13 @@ font-size: 30px;
 
 export const TechnologiesAnsFramsContainer = styled.div`
 display: flex;
+background: none;
 `;
 
 export const TechnologiesAnsFramsSection = styled(Box)`
 padding: 0 20px;
 display: flex;
+background: none;
 align-items: center;
 justify-content: center;
 `;
