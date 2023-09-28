@@ -40,12 +40,7 @@ const AboutMe = () => {
 
       <ImagePersonal src='https://avatars.githubusercontent.com/u/87835597?v=4' width={120} height={120}  alt="Imagem Pessoal" />
       <TitleName>Douglas S. Leite</TitleName>
-      <Qualities>
-        <Quality>{t("quality1")}</Quality>
-        <Quality>{t("quality2")}</Quality>
-        <Quality>{t("quality3")}</Quality>
-        <Quality>{t("quality4")}</Quality>
-      </Qualities>
+    
       <Description>{t("description")}</Description>
       <IconsContainer>
         <Icon

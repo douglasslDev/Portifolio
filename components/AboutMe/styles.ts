@@ -71,12 +71,12 @@ export const Quality = styled.strong`
 `;
 
 export const Description = styled.p`
-  margin-top: 5%;
+  margin-top: 15%;
   
 `;
 
 export const IconsContainer = styled.div`
-  margin-top: 10%;
+  margin-top: 15%;
   display: flex;
   align-items: center;
   height: 50px;

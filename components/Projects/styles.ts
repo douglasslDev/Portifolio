@@ -64,6 +64,7 @@ width: 100%;
 export const ProjectsContainerTitle = styled.h1`
 margin-bottom: 30px;
 font-size:30px;
+color: white;
 `;
 
 export const TitleTecAndFrams = styled.h1`
@@ -72,6 +73,7 @@ display:flex;
 margin-top: 30px;
 margin-bottom: 50px;
 font-size: 30px;
+text-align:center;
 `;
 
 export const TechnologiesAnsFramsContainer = styled.div`

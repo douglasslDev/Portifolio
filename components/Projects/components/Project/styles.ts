@@ -14,6 +14,7 @@ width: 300px;
 export const TopInfo = styled.div`
   color: white;
   display: flex;
+  margin-bottom: 5px;
   justify-content: space-between;
 `;
 
@@ -23,6 +24,7 @@ export const RoleInfo = styled.strong``;
 export const MockUpContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
 
 `;
 
@@ -40,6 +42,7 @@ export const MockUp = styled(Image)`
 export const ProjectFooter = styled.div`
   display: flex;
   flex-direction: column;
+
   > div:first-child {
     margin-bottom: 15px;
   }
