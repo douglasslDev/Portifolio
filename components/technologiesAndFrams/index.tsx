@@ -17,7 +17,7 @@
     const { locale, t } = useTranslation();
 
     return(
-      <Content >
+      <Content  >
       <CardContainer style={{alignItems:'center', display:'flex', justifyContent:'center', flexDirection:'column', }} >
       <Typography variant="h6" gutterBottom >
           {label}
