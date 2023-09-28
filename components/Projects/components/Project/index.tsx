@@ -1,5 +1,6 @@
 import useTranslation from "../../../../hooks/useTranslation";
 import { Button } from "primereact/button";     
+import Paper from '@mui/material/Paper';
 
 import {
   Content,
@@ -36,7 +37,8 @@ const Project = ({
 }: iProject) => {
   const {t} = useTranslation();
   return (
-    <Content >
+    <Content   >
+      
       <TopInfo>
         <RoleInfo>{role}</RoleInfo>
       </TopInfo>

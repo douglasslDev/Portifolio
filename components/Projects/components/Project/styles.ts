@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import Image from "next/image";
+
 export const Content = styled.div`
   display: flex;
+padding: 20px;
+width: 300px;
   flex-direction: column;
   align-items: center;
- margin-right: 20px;
  border-radius: 30px;
- padding: 20px; 
  
 `;
 

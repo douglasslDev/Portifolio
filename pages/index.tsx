@@ -16,6 +16,8 @@ const Index = () => {
       <noscript>
         <meta http-equiv="refresh" content="0; url=/en" />
       </noscript>
+      <script src="https://kit.fontawesome.com/f7d406e3b8.js" crossOrigin="anonymous"></script>
+
     </Head>
   );
 };

@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { Button } from "primereact/button";
+
 export const Content = styled.section`
   padding: 5% 10%;
-  height: 100vh;
  
   @media (min-width: 990px) {
     padding: 20% 18%;
@@ -97,23 +98,8 @@ export const Icon = styled.a`
   }
 `;
 
-export const ButtonContainer = styled.div`
-  margin-top: 10%;
-`;
 
-export const ContactMe = styled.a`
-  font-size: 17px;
-  font-weight: 500;
-  padding: 15px 24px;
-  border-radius: 3px;
-  cursor: pointer;
-  color: #fff;
-  background: #007bfc;
-  opacity: 0.7;
-  overflow: hidden;
-  transition: 0.3s;
 
-  &:hover {
-    opacity: 1;
-  }
+export const ContactMe = styled(Button)`
+  margin-top: 20px;
 `;
