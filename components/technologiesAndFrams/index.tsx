@@ -18,11 +18,11 @@
 
     return(
       <Content >
-      <CardContainer style={{alignItems:'center', display:'flex', justifyContent:'center', flexDirection:'column', color:'white'}} >
-      <Typography variant="h6" gutterBottom>
+      <CardContainer style={{alignItems:'center', display:'flex', justifyContent:'center', flexDirection:'column', }} >
+      <Typography variant="h6" gutterBottom style={{color:'white'}}>
           {label}
         </Typography>
-        <FontAwesomeIcon icon={icon}  style={{ fontSize: '80px' }}/>
+        <FontAwesomeIcon icon={icon}  style={{ fontSize: '80px', color:'white' }}/>
        
       </CardContainer>
     </Content>
