@@ -13,6 +13,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: var(--font-family);
+    margin: 0px;
+    display: flex;
 }  
 
   a {
