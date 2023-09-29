@@ -3,24 +3,58 @@ import Image from "next/image";
 import { Button } from "primereact/button";
 
 export const Content = styled.section`
-
+display: flex;
   padding:10%;
- 
+  flex-direction: column;
+
   @media (min-width: 990px) {
+    display: flex;
     padding:10%;
+    flex-direction: column;
+    width: 100%;
+
+
   }
+`;
+
+export const AboutMeContainer = styled.div`
+display: flex;
+flex-direction: column;
+
+@media (min-width: 990px) {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+`;
+
+export const DataAboutMe = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+@media (min-width: 990px) {
+display: flex;
+justify-content: center ;
+align-items: baseline;
+width: 50%;
+
+}
 `;
 
 export const TranslateContainer = styled.div`
 display: flex;
-justify-content: end;
 padding: 0 20px;
 transition: 0.3s;
-margin-bottom: 50px;
+margin-bottom: 80px;
+justify-content: end;
+
 
   > span {
     font-size: 32px;
     padding: 0 10px;
+    color: white;
   }
 
   > span:nth-child(2) {
@@ -44,6 +78,7 @@ display: flex;
 color: white;
   font-size: 35px;
   font-family: 'serif';
+  
 `;
 
 export const ImagePersonal = styled(Image)`
@@ -53,6 +88,9 @@ border-radius: 80px`;
 
 
 export const LineHorizontal=styled.div`
+width: 90%;
+border: 1px white outset;
+opacity: 0.5;
 
 `;
 
@@ -65,6 +103,7 @@ width: 60%;
   text-align: center;
   @media (min-width: 990px) {
 display: flex;
+text-align: start;
 }
 `;
 
@@ -93,35 +132,19 @@ display: flex;
 
 
 export const ContactMe = styled(Button)`
-width: 130px;
+width: 150px;
 margin-top: 20px;
 
-margin-bottom: 60px;
+
 @media (min-width: 990px) {
 display: flex;
-margin-top: 20px;
+margin-top: 60px;
 
 }
 `;
 
 
-export const AboutMeContainer = styled.div`
-display: flex;
-flex-direction: column;
-
-@media (min-width: 990px) {
-display: flex;
-flex-direction: row;
-}
-`;
 
 
-export const DataAboutMe = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-@media (min-width: 990px) {
-display: flex;
-}
-`;
+
+

@@ -74,7 +74,6 @@ const AboutMe = () => {
       </DataAboutMe>
       <LottieAnimation/>
       </AboutMeContainer>
-    
     </Content>
   );
 };

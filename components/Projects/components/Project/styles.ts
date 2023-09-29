@@ -102,3 +102,9 @@ export const ModalContainer = styled(Box)`
 `;
 
 
+
+export const LineHorizontal=styled.div`
+width: 90%;
+border: 1px white outset;
+opacity: 0.5;
+`;

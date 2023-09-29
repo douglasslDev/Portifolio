@@ -88,3 +88,9 @@ align-items: center;
 justify-content: center;
 `;
 
+export const LineHorizontal=styled.div`
+width: 70%;
+border: 1px white outset;
+opacity: 0.5;
+margin-bottom: 30px;
+`;

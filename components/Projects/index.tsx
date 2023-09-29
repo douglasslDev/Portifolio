@@ -11,6 +11,7 @@ import {
   ProjectsContainerTitle, 
   TitleTecAndFrams, 
   TechnologiesAnsFramsSection,
+  LineHorizontal,
 } 
 
 from "./styles";
@@ -46,12 +47,16 @@ const Projects = () => {
 
   return (
     <Content>
+            <LineHorizontal/>
+
       <TitleTecAndFrams className="animate__animated animate__backInUp">
       {t("TitleTechnologiesAndFrams")}
 </TitleTecAndFrams>
 <TechnologiesAnsFramsSection sx={{ flexWrap: 'wrap' }}>
 <Carousel data={data1} activeSlide={4}/>
 </TechnologiesAnsFramsSection>  
+<LineHorizontal/>
+
       <ProjectsContainerSection>
         <ProjectsContainerTitle className="animate__animated animate__backInUp">
           {t("titleProjects")}
