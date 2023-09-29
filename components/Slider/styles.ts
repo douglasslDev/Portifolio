@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 export const Content = styled.div`
 display: flex;
   position: relative;
-  perspective: 500px;
+  perspective: 200px;
   transform-style: preserve-3d;
     width: 362px;
   height: 272px; 

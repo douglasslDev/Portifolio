@@ -115,7 +115,7 @@ const Carousel: React.FC<CarouselProps> = (props) => {
       <Buttons >
         <FontAwesomeIcon
           className="btn"
-          style={{cursor:'pointer', marginRight:20,}}
+          style={{cursor:'pointer', marginRight:25,}}
           onClick={prev}
           icon={faChevronLeft}
           color="#fff"
