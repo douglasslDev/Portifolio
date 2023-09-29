@@ -1,6 +1,5 @@
 import {useCallback} from "react";
 import {useRouter} from "next/router";
-import { Button } from "primereact/button";
 import useTranslation from "../../hooks/useTranslation";
 import {locales} from "../../translations/config";
 import {
@@ -8,13 +7,14 @@ import {
   TranslateContainer,
   TitleName,
   ImagePersonal,
-  Qualities,
-  Quality,
+  AboutMeContainer,
+  DataAboutMe,
   Description,
   IconsContainer,
   Icon,
   ContactMe,
 } from "./styles";
+import LottieAnimation from "../LottieAnimation/AnimationDeveloper";
 
 const AboutMe = () => {
   const {t} = useTranslation();
@@ -37,10 +37,10 @@ const AboutMe = () => {
         <span> | </span>
         <span onClick={() => handleLocaleChange("en")}>EN</span>
       </TranslateContainer>
-
+      <AboutMeContainer>
+      <DataAboutMe>
       <ImagePersonal src='https://avatars.githubusercontent.com/u/87835597?v=4' width={120} height={120}  alt="Imagem Pessoal" />
       <TitleName>Douglas S. Leite</TitleName>
-    
       <Description>{t("description")}</Description>
       <IconsContainer>
         <Icon
@@ -71,6 +71,10 @@ const AboutMe = () => {
         />
       </IconsContainer> 
       <ContactMe label={t("contactButton")} severity="secondary" onClick={()=>window.open('https://wa.me/5521966199134?text=Fala%20dev!')} />   
+      </DataAboutMe>
+      <LottieAnimation/>
+      </AboutMeContainer>
+    
     </Content>
   );
 };

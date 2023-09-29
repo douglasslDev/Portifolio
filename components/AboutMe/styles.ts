@@ -3,23 +3,24 @@ import Image from "next/image";
 import { Button } from "primereact/button";
 
 export const Content = styled.section`
-  padding: 5% 10%;
+
+  padding:10%;
  
   @media (min-width: 990px) {
-    padding: 20% 18%;
-    position: sticky;
-    top: 0;
+    padding:10%;
   }
 `;
 
 export const TranslateContainer = styled.div`
-  position: absolute;
-  top: 3%;
-  right: 5%;
-  transition: 0.3s;
+display: flex;
+justify-content: end;
+padding: 0 20px;
+transition: 0.3s;
+margin-bottom: 50px;
 
   > span {
-    font-size: 22px;
+    font-size: 32px;
+    padding: 0 10px;
   }
 
   > span:nth-child(2) {
@@ -29,7 +30,7 @@ export const TranslateContainer = styled.div`
   > span:first-child,
   span:last-child {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 32px;
   }
 
   > span:first-child:hover,
@@ -39,6 +40,8 @@ export const TranslateContainer = styled.div`
 `;
 
 export const TitleName = styled.h1`
+display: flex;
+color: white;
   font-size: 35px;
   font-family: 'serif';
 `;
@@ -47,47 +50,36 @@ export const ImagePersonal = styled(Image)`
 display: flex;
 border-radius: 80px`;
 
-export const Qualities = styled.div`
-  margin-top: 10%;
-  margin-bottom: 10%;
-  > strong:not(:last-child) {
-    margin-bottom: 20px;
-  }
 
-  @media (min-width: 990px) {
-    margin-top: 10%;
-  }
-`;
 
 export const LineHorizontal=styled.div`
 
 `;
 
-export const Quality = styled.strong`
-  font-size: 15px;
-  display: block;
-  font-family:serif;
-  color: #555;
-`;
 
 export const Description = styled.p`
-  margin-top: 15%;
-  
+display: flex;
+color: white;
+width: 60%;
+  margin-top: 8%;
+  text-align: center;
+  @media (min-width: 990px) {
+display: flex;
+}
 `;
 
 export const IconsContainer = styled.div`
-  margin-top: 15%;
+  margin-top: 5%;
   display: flex;
   align-items: center;
   height: 50px;
 `;
 
 export const Icon = styled.a`
+display: flex;
   color: #56baec;
   opacity: 0.5;
-
   transition: 0.3s;
-
   &:not(:last-child) {
     margin-right: 25px;
   }
@@ -101,5 +93,35 @@ export const Icon = styled.a`
 
 
 export const ContactMe = styled(Button)`
-  margin-top: 20px;
+width: 130px;
+margin-top: 20px;
+
+margin-bottom: 60px;
+@media (min-width: 990px) {
+display: flex;
+margin-top: 20px;
+
+}
+`;
+
+
+export const AboutMeContainer = styled.div`
+display: flex;
+flex-direction: column;
+
+@media (min-width: 990px) {
+display: flex;
+flex-direction: row;
+}
+`;
+
+
+export const DataAboutMe = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+@media (min-width: 990px) {
+display: flex;
+}
 `;

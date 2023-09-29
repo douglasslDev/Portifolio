@@ -3,9 +3,7 @@ import styled from "styled-components";
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
-  @media (min-width: 990px) {
-    display: grid;
-    grid-template-columns: 0.6fr 1fr;
-  }
+  background: linear-gradient(180deg, rgba(7,34,71,1) 2%, rgba(17,64,104,1) 25%, rgba(47,148,196,1) 66%);
+
 `;
 

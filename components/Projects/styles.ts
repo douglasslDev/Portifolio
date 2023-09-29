@@ -8,7 +8,6 @@ flex-direction: column;
 width: 100% ;
 justify-content: center;
 align-items: center;
-background: linear-gradient(180deg, rgba(7,34,71,1) 2%, rgba(17,64,104,1) 25%, rgba(47,148,196,1) 66%);
 `;
 export const ProjectContainer = styled.section`
 display: flex;
