@@ -1,7 +1,8 @@
 import useTranslation from "../../../../hooks/useTranslation";
 import { Button } from "primereact/button";     
-import Paper from '@mui/material/Paper';
-
+import Modal from '@mui/material/Modal';
+import { useState } from "react";
+import { Typography } from "@mui/material";
 import {
   Content,
   TopInfo,
@@ -12,6 +13,7 @@ import {
   Presentation,
   IconsContainer,
   Icon,
+  ModalContainer,
 } from "./styles";
 
 export interface iProject {
@@ -25,6 +27,20 @@ export interface iProject {
   deploy: string;
 }
 
+const style = {
+    display:'flex',
+    flexDirection:'Column',
+    textAlign:'center',
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 600,
+    height: 400,
+    backgroundColor: 'white',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+    padding: 16,
+};
 
 const Project = ({
   role,
@@ -36,6 +52,9 @@ const Project = ({
   deploy,
 }: iProject) => {
   const {t} = useTranslation();
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <Content   >
       
@@ -67,9 +86,25 @@ const Project = ({
           />
         </IconsContainer>
       
-
       </ProjectFooter>
-      <Button label="Info" severity="secondary" rounded />   
+      <Button label="Info" severity="secondary" rounded onClick={handleOpen} />   
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <ModalContainer sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            {title}
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          {description}
+          </Typography>
+        </ModalContainer>
+      </Modal>
+    
+  
        </Content>
 
   );

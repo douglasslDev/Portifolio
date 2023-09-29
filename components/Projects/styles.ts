@@ -82,9 +82,10 @@ background: none;
 `;
 
 export const TechnologiesAnsFramsSection = styled(Box)`
-padding: 0 20px;
+padding: 0 30px;
 display: flex;
 background: none;
 align-items: center;
 justify-content: center;
 `;
+

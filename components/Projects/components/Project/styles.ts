@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { Box,Typography } from "@mui/material";
+
 
 export const Content = styled.div`
   display: flex;
-padding: 20px;
-width: 300px;
+  padding: 20px;
+  width: 300px;
   flex-direction: column;
   align-items: center;
- border-radius: 30px;
+  border-radius: 30px;
  
 `;
 
@@ -91,3 +93,12 @@ export const Icon = styled.a`
     opacity: 1;
   }
 `;
+
+export const ModalContainer = styled(Box)`
+
+  display:flex;
+
+
+`;
+
+

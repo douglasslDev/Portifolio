@@ -2,13 +2,6 @@ import React from 'react';
 import useTranslation from "../../hooks/useTranslation";
 import Project, { iProject } from "./components/Project";
 import Footer from "./components/Footer";
-import TechnologiesAnsFrams from "../technologiesAndFrams";
-import { faReact } from '@fortawesome/free-brands-svg-icons';
-import { faCss3 } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import {faSquareJs} from '@fortawesome/free-brands-svg-icons';
-import {faNodeJs} from '@fortawesome/free-brands-svg-icons';
 
 import {
   Content, 
@@ -17,12 +10,13 @@ import {
   ProjectsSection, 
   ProjectsContainerTitle, 
   TitleTecAndFrams, 
-  TechnologiesAnsFramsContainer,
   TechnologiesAnsFramsSection,
 } 
 
 from "./styles";
 
+import Carousel from '../Slider';
+import data1 from '../Slider/data1';
 const Projects = () => {
   const { locale, t } = useTranslation();
 
@@ -47,69 +41,28 @@ const Projects = () => {
       deploy: 'https://portifolio-eight-blue.vercel.app/pt',
       color: 'blue',
     },
-   
-  
+    
   ];
-
-  const Data = [
-    {
-      label:'React',
-      icon: faReact,
-    },
-    {
-      label:'React Native',
-      icon: faReact,
-    },
-    {
-      label:'Css3',
-      icon: faCss3,
-    },
-    {
-      label:'Github',
-      icon: faGithub,
-    },
-    {
-      label:'HTML 5',
-      icon: faHtml5,
-    },
-    {
-      label:'JavaScript',
-      icon: faSquareJs,
-    },
-    {
-      label:'Node.Js',
-      icon: faNodeJs,
-    },
-  ]
 
   return (
     <Content>
       <TitleTecAndFrams className="animate__animated animate__backInUp">
       {t("TitleTechnologiesAndFrams")}
 </TitleTecAndFrams>
-
 <TechnologiesAnsFramsSection sx={{ flexWrap: 'wrap' }}>
-  
-{Data.map((item, index)=>(
-  <TechnologiesAnsFramsContainer key={index}> 
-  <TechnologiesAnsFrams label={item.label} icon={item.icon} />
-  </TechnologiesAnsFramsContainer>
-))}
-
-</TechnologiesAnsFramsSection>
-      
-
+<Carousel data={data1} activeSlide={4}/>
+</TechnologiesAnsFramsSection>  
       <ProjectsContainerSection>
         <ProjectsContainerTitle className="animate__animated animate__backInUp">
           {t("titleProjects")}
         </ProjectsContainerTitle>
       <ProjectsSection sx={{ flexWrap: 'wrap' }}> 
-          {projectsTemplate.map((project, index) => (
-            <ProjectsContainer key={index}>
-              <Project {...project} />
-            </ProjectsContainer>
-          ))}
-                </ProjectsSection>
+{ projectsTemplate.map((project, index) => (
+      <ProjectsContainer key={index}>
+        <Project {...project} />
+      </ProjectsContainer>
+    ))}
+      </ProjectsSection>
       </ProjectsContainerSection>
       <Footer />
     </Content>

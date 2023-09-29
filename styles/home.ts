@@ -9,3 +9,4 @@ export const Main = styled.main`
     grid-template-columns: 0.6fr 1fr;
   }
 `;
+
