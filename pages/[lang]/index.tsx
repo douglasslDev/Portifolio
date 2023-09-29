@@ -18,16 +18,16 @@ const Home = () => {
     htmlEl[0].setAttribute("lang", locale);
   }, []);
   return (
-    <>
+    <div >
       <Head>
         <title>Douglas Santos - {t("jobRole")}</title>
         <meta name="description" content={t("metaDescription")}></meta>
       </Head>
-      <Main>
+      <Main >
         <AboutMe />
         <Projects />
       </Main>
-    </>
+    </div>
   );
 };
 export default withLocale(Home);
