@@ -11,7 +11,9 @@ import {
     CarouselContainerSection,
     CardContainer,
     CardReflection,
-    Buttons
+    Buttons,
+    TitleContainer,
+    DescriptionContainer
   } 
   from "./styles";
 
@@ -138,8 +140,8 @@ const SliderContent = (props:SliderContentProps) => {
     return (
     <div className="sliderContent">
  <FontAwesomeIcon icon={props.icon} style={{fontSize: '80px', color:'white' }} /> 
-     <h2>{props.title}</h2>
-      <p>{props.desc}</p>
+     <TitleContainer>{props.title}</TitleContainer>
+      <DescriptionContainer>{props.desc}</DescriptionContainer>
     </div>
   );
 };

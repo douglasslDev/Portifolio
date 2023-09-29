@@ -9,21 +9,12 @@ import '@fontsource/roboto/700.css';
 
 export const GlobalStyle = createGlobalStyle`
 
-  html,
-
-  body {
+  html, body {
     font-family: var(--font-family);
-    margin: 0px;
+    margin: 0;
+    padding:0;
     display: flex;
 }  
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    color: blue;
-  }
 
-  * {
-    box-sizing: border-box;
-  }
 `;

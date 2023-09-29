@@ -20,12 +20,27 @@ text-align: center;
 
 export const TitleContainer = styled.h1`
 display:flex;
-color: black;
+color: white;
+text-align: center;
+align-items: center;
+justify-content: center;
 `;
+export const DescriptionContainer = styled.h3`
+display:flex;
+color: white;
+font-weight: 300;
+text-align: center;
+font-size: 10px;
+align-items: center;
+justify-content: center;
+`;
+
 
 export const CardContainer = styled(CardContent)`
 display: flex;
 width: 50%;
+align-items: center;
+justify-content: center;
   height: 272px;
   transition: transform 500ms ease 0s, opacity 500ms ease 0s,
 visibility 500ms ease 0s;

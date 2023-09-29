@@ -12,7 +12,7 @@ const defaultOptions={
 
   return (
     <div>
-      <Lottie options={defaultOptions}  width={100} />
+      <Lottie options={defaultOptions}   />
     </div>
   );
 };
