@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimationDeveloper from '../../public/AnimationDeveloper.json'; // Substitua pelo caminho correto para o seu arquivo JSON
 import Lottie from "react-lottie";
-
+import { Content,LottieContainer } from './styles';
 const LottieAnimation = () => {
 
 const defaultOptions={
@@ -11,9 +11,9 @@ const defaultOptions={
 }
 
   return (
-    <div>
-      <Lottie options={defaultOptions}   />
-    </div>
+    <Content>
+      <LottieContainer options={defaultOptions}    />
+    </Content>
   );
 };
 

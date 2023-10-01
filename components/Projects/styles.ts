@@ -7,7 +7,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 100vh;
+width: 100%;
 `;
 
 export const ProjectContainer = styled.section`
@@ -87,7 +87,6 @@ background: none;
 `;
 
 export const TechnologiesAnsFramsSection = styled(Box)`
-padding: 0 30px;
 display: flex;
 background: none;
 align-items: center;

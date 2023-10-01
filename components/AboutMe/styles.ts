@@ -5,14 +5,15 @@ import { Button } from "primereact/button";
 export const Content = styled.section`
 display: flex;
   flex-direction: column;
-
+  width: 100%;
+padding: 10% 15%;
   @media (min-width: 990px) {
     display: flex;
-    padding:10%;
     flex-direction: column;
     width: 100%;
-
-
+    @media (min-width: 990px) {
+      padding: 10% 10%;
+}
   }
 `;
 
@@ -23,6 +24,7 @@ flex-direction: column;
 @media (min-width: 990px) {
 display: flex;
 flex-direction: row;
+
 align-items: center;
 justify-content: center;
 }
@@ -110,7 +112,8 @@ font-size: 34px;
   @media (min-width: 990px) {
 display: flex;
 text-align: start;
-max-width:30%;
+max-width:50%;
+text-align: justify;
 font-size: 24px;
 }
 `;

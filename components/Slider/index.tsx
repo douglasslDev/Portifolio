@@ -138,11 +138,11 @@ const Carousel: React.FC<CarouselProps> = (props) => {
 
 const SliderContent = (props:SliderContentProps) => {
     return (
-    <div className="sliderContent">
+    <CardContainer>
  <FontAwesomeIcon icon={props.icon} style={{fontSize: '80px', color:'white' }} /> 
      <TitleContainer>{props.title}</TitleContainer>
       <DescriptionContainer>{props.desc}</DescriptionContainer>
-    </div>
+    </CardContainer>
   );
 };
 

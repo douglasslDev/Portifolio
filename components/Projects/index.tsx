@@ -69,7 +69,6 @@ const Projects = () => {
     ))}
       </ProjectsSection>
       </ProjectsContainerSection>
-      <Footer />
     </Content>
   );
 };

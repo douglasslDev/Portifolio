@@ -9,6 +9,7 @@ import Projects from "../../components/Projects";
 
 import {Main} from "../../styles/home";
 import {useEffect} from "react";
+import Footer from "../../components/Projects/components/Footer";
 
 const Home = () => {
   const {locale, t} = useTranslation();
@@ -18,16 +19,17 @@ const Home = () => {
     htmlEl[0].setAttribute("lang", locale);
   }, []);
   return (
-    <div >
+    <Main >
       <Head>
         <title>Douglas Santos - {t("jobRole")}</title>
         <meta name="description" content={t("metaDescription")}></meta>
       </Head>
-      <Main >
+      
         <AboutMe />
         <Projects />
+        <Footer/>
       </Main>
-    </div>
+ 
   );
 };
 export default withLocale(Home);

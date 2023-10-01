@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import CardContent from '@mui/material/CardContent';
 
+
+export const CarouselContainerSection =styled.div`
+display:flex;
+flex-direction: column;
+text-align: center;
+width: 100%;
+`;
 export const Content = styled.div`
 display: flex;
   position: relative;
@@ -15,6 +22,7 @@ text-align: center;
 
   @media (min-width: 990px) {
     perspective: 1000px;
+    
   }
 `;
 
@@ -39,10 +47,11 @@ justify-content: center;
 
 export const CardContainer = styled(CardContent)`
 display: flex;
-width: 60%;
+width: 80%;
+height: 300px;
+flex-direction: column;
 align-items: center;
 justify-content: center;
-  height: 300px;
   transition: transform 500ms ease 0s, opacity 500ms ease 0s,
 visibility 500ms ease 0s;
   position: absolute;
@@ -50,14 +59,15 @@ visibility 500ms ease 0s;
   border-radius: 12px;
   justify-content: center;
   align-items: center;
+  @media (min-width: 990px) {
+    width: 60%;  
+    height: 300px;
+
+
+  } 
 
 `;
 
-export const CarouselContainerSection =styled.div`
-display:flex;
-flex-direction: column;
-text-align: center;
-`;
 
 export const CardReflection =styled.div`
   position: absolute;

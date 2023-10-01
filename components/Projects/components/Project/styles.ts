@@ -8,11 +8,12 @@ export const Content = styled.div`
   width: 300px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 30px;
  
 `;
 
-export const TopInfo = styled.div`
+export const TopInfo = styled.div`  
   color: white;
   display: flex;
   margin-bottom: 5px;
