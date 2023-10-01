@@ -5,7 +5,6 @@ import { Box,Typography } from "@mui/material";
 
 export const Content = styled.div`
   display: flex;
-  padding: 20px;
   width: 300px;
   flex-direction: column;
   align-items: center;
@@ -65,6 +64,7 @@ flex-direction:column;
   color: white;
   text-align: center;
   > span {
+    font-size: 20px;
   }
 `;
 

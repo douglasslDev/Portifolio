@@ -8,6 +8,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 `;
+
 export const ProjectContainer = styled.section`
 display: flex;
 
@@ -16,7 +17,6 @@ display: flex;
 export const  ProjectsSection = styled(Box) `
 display: flex;
 justify-content: center;
-padding: 0px 40px;
 margin-bottom: 20px;
 flex-direction: column;
 
@@ -61,7 +61,7 @@ width: 100%;
 
 export const ProjectsContainerTitle = styled.h1`
 margin-bottom: 30px;
-font-size:30px;
+font-size:40px;
 color: white;
 `;
 

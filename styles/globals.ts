@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding:0;
     display: flex;
+    color: white;
     background: linear-gradient(180deg, rgba(7,34,71,1) 2%, rgba(17,64,104,1) 25%, rgba(47,148,196,1) 66%);
 
 }  

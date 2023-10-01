@@ -38,7 +38,6 @@ align-items: center;
 display: flex;
 justify-content: center ;
 align-items: baseline;
-width: 50%;
 
 }
 `;
@@ -97,13 +96,16 @@ opacity: 0.5;
 
 export const Description = styled.p`
 display: flex;
+justify-content: end;
 color: white;
-width: 60%;
+font-size: 34px;
   margin-top: 8%;
   text-align: center;
   @media (min-width: 990px) {
 display: flex;
 text-align: start;
+max-width:30%;
+font-size: 24px;
 }
 `;
 

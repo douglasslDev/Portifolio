@@ -4,10 +4,10 @@ import CardContent from '@mui/material/CardContent';
 export const Content = styled.div`
 display: flex;
   position: relative;
-  perspective: 200px;
+  perspective: 1000px;
   transform-style: preserve-3d;
     width: 362px;
-  height: 272px; 
+  height: 300px; 
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -24,6 +24,7 @@ color: white;
 text-align: center;
 align-items: center;
 justify-content: center;
+font-size: 24px;
 `;
 export const DescriptionContainer = styled.h3`
 display:flex;
@@ -38,10 +39,10 @@ justify-content: center;
 
 export const CardContainer = styled(CardContent)`
 display: flex;
-width: 50%;
+width: 60%;
 align-items: center;
 justify-content: center;
-  height: 272px;
+  height: 300px;
   transition: transform 500ms ease 0s, opacity 500ms ease 0s,
 visibility 500ms ease 0s;
   position: absolute;
@@ -61,7 +62,7 @@ text-align: center;
 export const CardReflection =styled.div`
   position: absolute;
   width: 50%;
-  height: 60px;
+  height: 300px;
   bottom: -60px;
   border-radius: 12px;
   transition: transform 500ms ease 0s, opacity 500ms ease 0s,

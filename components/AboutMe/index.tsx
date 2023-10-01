@@ -72,7 +72,7 @@ const AboutMe = () => {
       </IconsContainer> 
       <ContactMe label={t("contactButton")} severity="secondary" onClick={()=>window.open('https://wa.me/5521966199134?text=Fala%20dev!')} />   
       </DataAboutMe>
-      <LottieAnimation/>
+      <LottieAnimation />
       </AboutMeContainer>
     </Content>
   );
