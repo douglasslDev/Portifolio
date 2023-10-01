@@ -7,6 +7,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+width: 100vh;
 `;
 
 export const ProjectContainer = styled.section`
@@ -55,7 +56,7 @@ display: flex;
 flex-direction:column;
 justify-content: center;
 align-items: center;
-width: 100%;
+width: 100vh;
 
 `;
 
@@ -63,6 +64,9 @@ export const ProjectsContainerTitle = styled.h1`
 margin-bottom: 30px;
 font-size:40px;
 color: white;
+@media (min-width: 990px) {
+
+}
 `;
 
 export const TitleTecAndFrams = styled.h1`
@@ -70,8 +74,11 @@ color: white;
 display:flex;
 margin-top: 30px;
 margin-bottom: 50px;
-font-size: 30px;
+font-size: 40px;
 text-align:center;
+@media (min-width: 990px) {
+
+}
 `;
 
 export const TechnologiesAnsFramsContainer = styled.div`

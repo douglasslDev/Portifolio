@@ -4,7 +4,6 @@ import { Button } from "primereact/button";
 
 export const Content = styled.section`
 display: flex;
-  padding:10%;
   flex-direction: column;
 
   @media (min-width: 990px) {
@@ -75,14 +74,21 @@ justify-content: end;
 export const TitleName = styled.h1`
 display: flex;
 color: white;
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'serif';
   
 `;
 
 export const ImagePersonal = styled(Image)`
 display: flex;
-border-radius: 80px`;
+border-radius: 200px;
+width: 200px;
+height: 200%;
+@media (min-width: 990px) {
+
+
+}
+`;
 
 
 
