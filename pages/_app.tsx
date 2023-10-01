@@ -1,6 +1,6 @@
 
 import type {AppProps} from "next/app";
-import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import { PrimeReactProvider } from 'primereact/api';
 
 import {getInitialLocale} from "../translations/getInitialLocale";
 

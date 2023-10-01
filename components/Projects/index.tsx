@@ -1,5 +1,5 @@
 import React from 'react';
-import useTranslation from "../../hooks/useTranslation";
+import useTranslation from '../../hooks/useTranslation';
 import Project, { iProject } from "./components/Project";
 import Footer from "./components/Footer";
 import Lottie from 'react-lottie'
