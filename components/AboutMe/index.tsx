@@ -35,7 +35,7 @@ const AboutMe = () => {
       <TranslateContainer>
         <span onClick={() => handleLocaleChange("pt")}>PT</span>
         <span> | </span>
-        <span onClick={() => handleLocaleChange("en")}>EN</span>
+        <span onClick={() => handleLocaleChange("en")}>EsN</span>
       </TranslateContainer>
       <AboutMeContainer>
       <DataAboutMe>
