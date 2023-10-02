@@ -5,6 +5,7 @@ export const Content = styled.footer`
   display: flex;
   @media (min-width: 990px) {
    min-width: 500px ;
+   min-height: 700px ;
 
 } 
   
