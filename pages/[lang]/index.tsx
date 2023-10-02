@@ -10,6 +10,7 @@ import Projects from "../../components/Projects";
 import {Main} from "../../styles/home";
 import {useEffect} from "react";
 import Footer from "../../components/Projects/components/Footer";
+import Header from "../../components/Header";
 
 const Home = () => {
   const {locale, t} = useTranslation();
@@ -25,6 +26,7 @@ const Home = () => {
         <meta name="description" content={t("metaDescription")}></meta>
       </Head>
       
+      <Header/>
         <AboutMe />
         <Projects />
         <Footer/>

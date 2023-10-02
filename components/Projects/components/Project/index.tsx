@@ -56,7 +56,7 @@ const Project = ({
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <Content   >
+    <Content  id="Projects"  >
       <TopInfo>
         <RoleInfo>{role}</RoleInfo>
       </TopInfo>

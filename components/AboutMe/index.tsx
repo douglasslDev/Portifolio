@@ -4,7 +4,6 @@ import useTranslation from "../../hooks/useTranslation";
 import {locales} from "../../translations/config";
 import {
   Content,
-  TranslateContainer,
   TitleName,
   ImagePersonal,
   AboutMeContainer,
@@ -18,25 +17,10 @@ import LottieAnimation from "../LottieAnimation/AnimationDeveloper";
 
 const AboutMe = () => {
   const {t} = useTranslation();
-  const router = useRouter();
-
-  const handleLocaleChange = useCallback(
-    (locale: string) => {
-      const regex = new RegExp(`^/(${locales.join("|")})`);
-      router.push(router.pathname, router.asPath.replace(regex, `/${locale}`));
-      const htmlEl = document.getElementsByTagName("html");
-      htmlEl[0].setAttribute("lang", locale);
-    },
-    [router],
-  );
-
+ 
   return (
-    <Content>
-      <TranslateContainer>
-        <span onClick={() => handleLocaleChange("pt")}>PT</span>
-        <span> | </span>
-        <span onClick={() => handleLocaleChange("en")}>EN</span>
-      </TranslateContainer>
+    <Content id="AboutMe">
+     
       <AboutMeContainer>
       <DataAboutMe>
       <ImagePersonal src='https://avatars.githubusercontent.com/u/87835597?v=4' width={120} height={120}  alt="Imagem Pessoal" />

@@ -46,7 +46,7 @@ const Projects = () => {
   ];
 
   return (
-    <Content>
+    <Content id="TecAndFrams">
             <LineHorizontal/>
 
       <TitleTecAndFrams className="animate__animated animate__backInUp">

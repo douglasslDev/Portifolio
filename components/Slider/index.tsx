@@ -17,6 +17,7 @@ import {
   } 
   from "./styles";
 import { Height } from "@mui/icons-material";
+import { Button } from "primereact/button";
 
   interface CarouselProps {
     data: {
@@ -44,6 +45,7 @@ const Carousel: React.FC<CarouselProps> = (props) => {
   };
 
   const prev = () => activeSlide > 0 && setActiveSlide(activeSlide - 1);
+
 
   const getStyles = (index:number) => {
     if (activeSlide === index)
@@ -93,17 +95,21 @@ const Carousel: React.FC<CarouselProps> = (props) => {
   return (
     <CarouselContainerSection>  
      <Content >
+     
         {props.data.map((item, i) => (
           <React.Fragment key={item.id}>
-            <CardContainer             
+          
+            <CardContainer  
               style={{
                 background: item.bgColor,
                 boxShadow: `0 5px 20px ${item.bgColor}30`,
                 ...getStyles(i)
                  
               }}
-            >
+            >           
+            
               <SliderContent {...item} />
+             
             </CardContainer>
             <CardReflection
               
@@ -116,13 +122,14 @@ const Carousel: React.FC<CarouselProps> = (props) => {
         ))}
       </Content>
       <Buttons >
+       
         <FontAwesomeIcon
           className="btn"
-          style={{cursor:'pointer', marginRight:25,}}
+          style={{cursor:'pointer', marginRight:35,}}
           onClick={prev}
           icon={faChevronLeft}
           color="#fff"
-          size="2x"
+          size="3x"
         />
         <FontAwesomeIcon
           className="btn"
@@ -130,7 +137,7 @@ const Carousel: React.FC<CarouselProps> = (props) => {
           style={{cursor:'pointer',}}
           icon={faChevronRight}
           color="#fff"
-          size="2x"
+          size="3x"
         />
       </Buttons>
     </CarouselContainerSection>

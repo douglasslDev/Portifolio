@@ -6,14 +6,13 @@ export const Content = styled.section`
 display: flex;
   flex-direction: column;
   width: 100%;
-padding: 10% 15%;
+padding: 25%  15% 15% 15%;
   @media (min-width: 990px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    @media (min-width: 990px) {
-      padding: 10% 10%;
-}
+  padding-top:10%;
+
   }
 `;
 
@@ -26,8 +25,8 @@ justify-content: center;
 display: flex;
 flex-direction: row;
 
-align-items: center;
-justify-content: center;
+align-items:center;
+justify-content: top;
 }
 `;
 
@@ -44,35 +43,7 @@ align-items: baseline;
 }
 `;
 
-export const TranslateContainer = styled.div`
-display: flex;
-padding: 0 20px;
-transition: 0.3s;
-margin-bottom: 80px;
-justify-content: end;
 
-
-  > span {
-    font-size: 32px;
-    padding: 0 10px;
-    color: white;
-  }
-
-  > span:nth-child(2) {
-    color: darkgray;
-  }
-
-  > span:first-child,
-  span:last-child {
-    cursor: pointer;
-    font-size: 32px;
-  }
-
-  > span:first-child:hover,
-  span:last-child:hover {
-    opacity: 0.5;
-  }
-`;
 
 export const TitleName = styled.h1`
 display: flex;
@@ -113,7 +84,7 @@ font-size: 34px;
   @media (min-width: 990px) {
 display: flex;
 text-align: start;
-max-width:50%;
+max-width:70%;
 text-align: justify;
 font-size: 24px;
 }
