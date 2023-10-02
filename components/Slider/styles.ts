@@ -6,12 +6,14 @@ export const CarouselContainerSection =styled.div`
 display:flex;
 flex-direction: column;
 text-align: center;
-width: 100%;
+justify-content: center;
+align-items: center;
+width: 80%;
 `;
 export const Content = styled.div`
 display: flex;
-  position: relative;
-  perspective: 1000px;
+  position: absolute;
+  perspective: 400px;
   transform-style: preserve-3d;
     width: 362px;
   height: 300px; 
