@@ -7,19 +7,16 @@ display:flex;
 flex-direction: column;
 text-align: center;
 justify-content: center;
-align-items: center;
 width: 80%;
 `;
 export const Content = styled.div`
 display: flex;
-  position: absolute;
+  position: relative;
   perspective: 400px;
   transform-style: preserve-3d;
-    width: 362px;
+    width: 280px;
   height: 300px; 
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+  
 text-align: center;
 
   @media (min-width: 990px) {
