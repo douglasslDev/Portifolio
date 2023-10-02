@@ -20,6 +20,7 @@ padding: 10% 15%;
 export const AboutMeContainer = styled.div`
 display: flex;
 flex-direction: column;
+justify-content: center;
 
 @media (min-width: 990px) {
 display: flex;
@@ -129,6 +130,7 @@ export const Icon = styled.a`
 display: flex;
   color: #56baec;
   opacity: 0.5;
+  text-decoration: none ;
   transition: 0.3s;
   &:not(:last-child) {
     margin-right: 25px;
