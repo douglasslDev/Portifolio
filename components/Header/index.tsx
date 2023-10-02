@@ -1,4 +1,4 @@
-import {Content,HeaderContainer,NavList, NavItem, Links,  TranslateContainer} from "./styles";
+import {Content,NavList, NavItem, Links,  TranslateContainer} from "./styles";
 import {useCallback} from "react";
 import {useRouter} from "next/router";
 import useTranslation from "../../hooks/useTranslation";
@@ -7,10 +7,8 @@ const Header = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     
     e.preventDefault();
-    // get the href and remove everything before the hash (#)
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, "");
-    // get the element by id and use scrollIntoView
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({
       behavior: "smooth",
@@ -18,7 +16,7 @@ const Header = () => {
   };
 
   const router = useRouter();
-
+  const {t} = useTranslation();
   const handleLocaleChange = useCallback(
     (locale: string) => {
       const regex = new RegExp(`^/(${locales.join("|")})`);
@@ -34,16 +32,16 @@ return(
   <Content>
   <NavList>
           <NavItem>
-            <Links href="#AboutMe" onClick={handleScroll}>HOME</Links>
+            <Links href="#AboutMe" onClick={handleScroll}>{t("headerHome")}</Links>
           </NavItem>
           <NavItem>
             <Links href="#TecAndFrams" onClick={handleScroll}>
-             TÉCNOLOGIAS E FRAMEWORKS
-            </Links>
+            {t("headerTecAndFrams")}
+                        </Links>
           </NavItem>   
           <NavItem>
             <Links href="#Projects" onClick={handleScroll}>
-              PROJETOS
+            {t("homeProjects")}
             </Links>
           </NavItem>
         </NavList>   

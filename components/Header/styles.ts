@@ -6,7 +6,7 @@ export const Content = styled.footer`
   display: flex;
 padding:  0 30px;
   align-items: center;
-  justify-content: space-between;
+justify-content: space-between;
 width: 90%;
 height: 100px;
 border-radius: 120px;
@@ -42,9 +42,11 @@ justify-content: space-between;
 export const NavItem = styled.li`
   display: flex;
   text-decoration: none;
-
   margin-right:20px;
-
+  &:hover{
+  border-bottom: 1px solid white;
+  opacity: 0.9;
+}
 
 `;
 
