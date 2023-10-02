@@ -1,27 +1,21 @@
 import styled from "styled-components";
 import CardContent from '@mui/material/CardContent';
 
-
-export const CarouselContainerSection =styled.div`
-display:flex;
-flex-direction: column;
-text-align: center;
-justify-content: center;
-width: 80%;
-`;
 export const Content = styled.div`
 display: flex;
   position: relative;
-  perspective: 400px;
+  flex-direction:column;
+  perspective: 200px;
   transform-style: preserve-3d;
-    width: 280px;
-  height: 300px; 
-  
+    width: 362px;
+  height: 272px; 
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 text-align: center;
 
   @media (min-width: 990px) {
     perspective: 1000px;
-    
   }
 `;
 
@@ -31,7 +25,6 @@ color: white;
 text-align: center;
 align-items: center;
 justify-content: center;
-font-size: 24px;
 `;
 export const DescriptionContainer = styled.h3`
 display:flex;
@@ -47,10 +40,11 @@ justify-content: center;
 export const CardContainer = styled(CardContent)`
 display: flex;
 width: 80%;
-height: 300px;
-flex-direction: column;
+height: 302px;
 align-items: center;
+flex-direction: column;
 justify-content: center;
+  
   transition: transform 500ms ease 0s, opacity 500ms ease 0s,
 visibility 500ms ease 0s;
   position: absolute;
@@ -58,28 +52,27 @@ visibility 500ms ease 0s;
   border-radius: 12px;
   justify-content: center;
   align-items: center;
-  @media (min-width: 990px) {
-    width: 60%;  
-    height: 300px;
-
-
-  } 
 
 `;
 
+export const CarouselContainerSection =styled.div`
+display:flex;
+flex-direction: column;
+text-align: center;
+`;
 
 export const CardReflection =styled.div`
   position: absolute;
-  width: 50%;
-  height: 300px;
-  bottom: -60px;
+  width: 80%;
+  height: 40px;
+  bottom:   -65px;
   border-radius: 12px;
   transition: transform 500ms ease 0s, opacity 500ms ease 0s,
   visibility 500ms ease 0s;
     `;
 
 export const Buttons =styled.div`
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 50px;
   
 `;

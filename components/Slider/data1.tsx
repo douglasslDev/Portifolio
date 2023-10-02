@@ -8,7 +8,7 @@ import {faNodeJs} from '@fortawesome/free-brands-svg-icons';
 export default [
   {
     id: 1,
-    bgColor: "#1597BB",
+    bgColor: "#000",
       icon: faReact,
     title: "React",
     desc:
@@ -16,7 +16,7 @@ export default [
   },
   {
     id: 2,
-    bgColor: "#1597BB",
+    bgColor: "#000",
       icon: faReact,
     title: "React Native",
     desc:
@@ -24,7 +24,7 @@ export default [
   },
   {
     id: 3,
-    bgColor: "#1597BB",
+    bgColor: "#000",
     icon: faSquareJs,
     title: "JavaScript",
     desc:
@@ -32,7 +32,7 @@ export default [
   },
   {
     id: 4,
-    bgColor: "#1597BB",
+    bgColor: "#000",
     icon: faHtml5,
     title: "Html5",
     desc:
@@ -40,7 +40,7 @@ export default [
   },
   {
     id: 5,
-    bgColor: "#1597BB",
+    bgColor: "#000",
     icon: faCss3,
     title: "Css3",
     desc:
@@ -48,7 +48,7 @@ export default [
   },
   {
     id: 6,
-    bgColor: "#1597BB",
+    bgColor: "#000",
     icon: faGithub,
     title: "Github",
     desc:
@@ -56,7 +56,7 @@ export default [
   },
   {
     id: 7,
-    bgColor: "#1597BB",
+    bgColor: "#000",
     icon: faNodeJs,
     title: "Node.Js",
     desc:

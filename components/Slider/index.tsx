@@ -16,6 +16,7 @@ import {
     DescriptionContainer
   } 
   from "./styles";
+import { Height } from "@mui/icons-material";
 
   interface CarouselProps {
     data: {
@@ -96,10 +97,10 @@ const Carousel: React.FC<CarouselProps> = (props) => {
           <React.Fragment key={item.id}>
             <CardContainer             
               style={{
-                cursor:'pointer',
                 background: item.bgColor,
                 boxShadow: `0 5px 20px ${item.bgColor}30`,
                 ...getStyles(i)
+                 
               }}
             >
               <SliderContent {...item} />
@@ -107,7 +108,7 @@ const Carousel: React.FC<CarouselProps> = (props) => {
             <CardReflection
               
               style={{
-                background: `linear-gradient(to bottom, ${item.bgColor}40, transparent)`,
+                background: `linear-gradient(to bottom,#0003, transparent)`,
                 ...getStyles(i)
               }}
             />
