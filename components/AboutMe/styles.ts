@@ -6,7 +6,8 @@ export const Content = styled.section`
 display: flex;
   flex-direction: column;
   width: 100%;
-padding: 25%  15% 15% 15%;
+padding: 25%  15% 10% 15%;
+
   @media (min-width: 990px) {
     display: flex;
     flex-direction: column;
@@ -35,6 +36,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-bottom: 50px;
 @media (min-width: 990px) {
 display: flex;
 justify-content: center ;
@@ -118,7 +120,6 @@ display: flex;
 export const ContactMe = styled(Button)`
 width: 150px;
 margin-top: 20px;
-
 
 @media (min-width: 990px) {
 display: flex;

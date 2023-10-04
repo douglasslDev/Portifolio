@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import CardContent from '@mui/material/CardContent';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Content = styled.div`
 display: flex;
@@ -74,6 +75,24 @@ export const CardReflection =styled.div`
 export const Buttons =styled.div`
   margin-top: 80px;
   margin-bottom: 50px;
-  
+
 `;
 
+export const ButtonFontAwesomeIcon= styled(FontAwesomeIcon)`
+border: 1px ;
+padding: 30px;
+border-radius: 100px;
+&:hover{
+background: white;
+transition: 0.5s;
+color: black;
+
+}
+&::after{
+  background: white;
+transition: 3s;
+color: black;
+}
+
+
+`;

@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export const Content = styled.section`
   display: flex;
-padding:  0 10px;
+padding: 20px;
   align-items: center;
 justify-content: space-between;
-width: 80%;
+width: 85%;
 height: 60px;
 border-radius: 120px;
 background: black;
@@ -62,7 +62,7 @@ export const NavItem = styled.li`
 `;
 
 export const Links = styled(Link)`
-font-size: 12px;
+font-size: 16px;
 font-weight: 400;
 color: white;
 text-decoration: none;

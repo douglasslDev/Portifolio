@@ -13,7 +13,8 @@ import {
     CardReflection,
     Buttons,
     TitleContainer,
-    DescriptionContainer
+    DescriptionContainer,
+    ButtonFontAwesomeIcon
   } 
   from "./styles";
 import { Height } from "@mui/icons-material";
@@ -123,15 +124,15 @@ const Carousel: React.FC<CarouselProps> = (props) => {
       </Content>
       <Buttons >
        
-        <FontAwesomeIcon
-          className="btn"
-          style={{cursor:'pointer', marginRight:35,}}
+        <ButtonFontAwesomeIcon
+className="btn btn-white btn-				 animate"    
+      style={{cursor:'pointer', marginRight:35,}}
           onClick={prev}
           icon={faChevronLeft}
           color="#fff"
           size="3x"
         />
-        <FontAwesomeIcon
+        <ButtonFontAwesomeIcon
           className="btn"
           onClick={next}
           style={{cursor:'pointer',}}
