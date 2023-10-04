@@ -2,13 +2,13 @@ import styled from "styled-components";
 import Link from "next/link";
 
 
-export const Content = styled.footer`
+export const Content = styled.section`
   display: flex;
-padding:  0 30px;
+padding:  0 10px;
   align-items: center;
 justify-content: space-between;
-width: 90%;
-height: 100px;
+width: 80%;
+height: 60px;
 border-radius: 120px;
 background: black;
 opacity: 0.8;
@@ -18,9 +18,23 @@ top: 5vh;
   opacity: 1;
 }
 
-@media (min-width: 990px) {
+
+@media (min-width: 700px) {
+  padding:  0 30px;
+  width: 75%;
+}
+
+@media (min-width: 900px) {
+  width: 65%;
+  padding:  0 30px;
+
+}
+
+@media (min-width: 1200px) {
   height: 70px;
-  width: 50%;
+  width: 45%;
+  padding:  0 15px;
+
 
 }
 `;
@@ -33,10 +47,7 @@ export const NavList = styled.ul`
   display: flex;
 padding: 0 20px;
 width: 80%;
-justify-content: space-between;
-@media (min-width: 990px) {
-  width: 70%;
-}
+
 `;
 
 export const NavItem = styled.li`
@@ -51,10 +62,14 @@ export const NavItem = styled.li`
 `;
 
 export const Links = styled(Link)`
-font-size: 14px;
+font-size: 12px;
 font-weight: 400;
 color: white;
 text-decoration: none;
+
+@media (min-width: 1300px) {
+  font-size: 14px;
+  }
 
 `;
 
