@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     color: white;
 
+
 }  
 
 
