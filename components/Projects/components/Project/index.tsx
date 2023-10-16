@@ -43,7 +43,7 @@ export interface iProject {
   skill6?: IconDefinition;
   skill7?: IconDefinition;
 
-}
+ }/*
 const style = {
     display:'flex',
     flexDirection:'Column',
@@ -55,7 +55,7 @@ const style = {
    
     backgroundColor: 'white',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-};
+}; */
 
 const Project = ({
   role,
