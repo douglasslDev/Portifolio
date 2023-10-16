@@ -118,12 +118,15 @@ opacity: 0.5;
 export const ModalContainerTitle = styled(Typography)`
 color: black;
 margin-top: 20px;
+font-weight: 600;
+
+font-size: 18px;
 `;
 
 export const ModalContainerDescription = styled(Typography)`
 color: black;
-font-size: 14px;
-font-weight: 500;
+font-size: 16px;
+font-weight: 400;
 text-align: justify;
 `;
 export const MontalContent = styled.div`
@@ -137,6 +140,7 @@ export const ModalCard = styled.div`
 
 border: 1px solid #d3d3d3;
 padding: 20px;
+margin: 20px;
 border-radius: 10px;
 margin-top: 20px;
 `;
