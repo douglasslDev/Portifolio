@@ -100,9 +100,23 @@ export const Icon = styled.a`
 `;
 
 export const ModalContainer = styled(Box)`
+
 border-radius: 20px;
   display:flex;
 opacity: 0.9;
+flex-direction:Column;
+    text-align:center;
+    min-width: 90%;
+    min-height: 30%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    @media (min-width: 990px) {
+min-width: 60%;
+    }
 
 `;
 
@@ -120,14 +134,22 @@ color: black;
 margin-top: 20px;
 font-weight: 600;
 
-font-size: 18px;
+font-size: 24px;
+@media (min-width: 990px) {
+  font-size: 18px;
+    }
 `;
 
 export const ModalContainerDescription = styled(Typography)`
 color: black;
-font-size: 16px;
+font-size: 20px;
 font-weight: 400;
 text-align: justify;
+@media (min-width: 990px) {
+  font-size: 16px;
+  font-weight: 400;
+
+    }
 `;
 export const MontalContent = styled.div`
 display: flex;

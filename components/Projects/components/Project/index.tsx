@@ -121,7 +121,7 @@ const Project = ({
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <ModalContainer sx={style}>
+        <ModalContainer>
           <MontalContent>
           <ModalContainerTitle id="modal-modal-title" variant="h6">
             {title}
