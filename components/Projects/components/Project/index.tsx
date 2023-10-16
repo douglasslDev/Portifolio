@@ -53,7 +53,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 600,
-    height: 400,
+    height: 500,
     backgroundColor: 'white',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
 };

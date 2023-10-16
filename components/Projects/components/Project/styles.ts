@@ -117,6 +117,7 @@ opacity: 0.5;
 
 export const ModalContainerTitle = styled(Typography)`
 color: black;
+margin-top: 20px;
 `;
 
 export const ModalContainerDescription = styled(Typography)`
