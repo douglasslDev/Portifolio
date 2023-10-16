@@ -43,19 +43,7 @@ export interface iProject {
   skill6?: IconDefinition;
   skill7?: IconDefinition;
 
- }/*
-const style = {
-    display:'flex',
-    flexDirection:'Column',
-    textAlign:'center',
-    position: 'fixed',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-   
-    backgroundColor: 'white',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-}; */
+ }
 
 const Project = ({
   role,
