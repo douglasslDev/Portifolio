@@ -40,8 +40,8 @@ justify-content: center;
 
 export const CardContainer = styled(CardContent)`
 display: flex;
-width: 80%;
-height: 302px;
+width: 60%;
+height: 200px;
 align-items: center;
 flex-direction: column;
 justify-content: center;
@@ -64,16 +64,15 @@ text-align: center;
 
 export const CardReflection =styled.div`
   position: absolute;
-  width: 80%;
+  width: 60%;
   height: 40px;
-  bottom:   -65px;
+  bottom:   32px;
   border-radius: 12px;
   transition: transform 500ms ease 0s, opacity 500ms ease 0s,
   visibility 500ms ease 0s;
     `;
 
 export const Buttons =styled.div`
-  margin-top: 80px;
   margin-bottom: 50px;
 
 `;

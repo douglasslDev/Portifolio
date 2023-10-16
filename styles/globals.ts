@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     padding:0;
     display: flex;
     color: white;
-
+    
 
 }  
 

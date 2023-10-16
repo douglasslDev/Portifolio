@@ -2,7 +2,13 @@ import React from 'react';
 import useTranslation from '../../hooks/useTranslation';
 import Project, { iProject } from "./components/Project";
 import Footer from "./components/Footer";
-import Lottie from 'react-lottie'
+import Lottie from 'react-lottie';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import {faSquareJs} from '@fortawesome/free-brands-svg-icons';
+import {faNodeJs} from '@fortawesome/free-brands-svg-icons';
 import {
   Content, 
   ProjectsContainerSection, 
@@ -27,20 +33,40 @@ const Projects = () => {
       img: '/img/mockupLouddi.png',
       type: 'desktop',
       title: t("title001"),
-      description: t("description001"),
+      descriptionProject: t("descriptionProject001"),
+      technologiesTitle: t("technologiesTitle"),
+      seeMore:t("seeMore"),
       source: 'https://github.com/douglasslDev/louddi',
       deploy: 'https://portifolio-eight-blue.vercel.app/pt',
       color: 'blue',
+      skill1:faReact,
+      skill2:faNodeJs,
+      skill3:faHtml5,
+      skill4:faSquareJs,
+      skill5:faNodeJs,
+      skill6:faCss3,
+      skill7:faGithub,
+
+      
     },
     {
       role: 'Front-end',
       img: '/img/mockupLouddi.png',
       type: 'desktop',
       title: t("title002"),
-      description: t("description002"),
+      descriptionProject: t("descriptionProject002"),
+      technologiesTitle: t("technologiesTitle"),
+      seeMore:t("seeMore"),
       source: 'https://github.com/douglasslDev/Portifolio',
       deploy: 'https://portifolio-eight-blue.vercel.app/pt',
       color: 'blue',
+      skill1:faReact,
+      skill2:faNodeJs,
+      skill3:faHtml5,
+      skill4:faSquareJs,
+      skill5:faNodeJs,
+      skill6:faCss3,
+      skill7:faGithub,
     },
     
   ];

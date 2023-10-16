@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Content = styled.section`
   display: flex;
-padding: 20px;
+padding: 20p  x;
   align-items: center;
 justify-content: space-between;
 width: 85%;

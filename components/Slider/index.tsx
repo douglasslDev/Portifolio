@@ -26,7 +26,6 @@ import { Button } from "primereact/button";
       icon: IconDefinition;
       bgColor: string;
       title: string; 
-      desc: string; 
     }[];
     activeSlide: number;
   }
@@ -34,7 +33,6 @@ import { Button } from "primereact/button";
   interface SliderContentProps {
     icon: IconDefinition;
       title: string;
-      desc: string;
       }
 
 const Carousel: React.FC<CarouselProps> = (props) => {
@@ -150,7 +148,7 @@ const SliderContent = (props:SliderContentProps) => {
     <CardContainer>
  <FontAwesomeIcon icon={props.icon} style={{fontSize: '80px', color:'white' }} /> 
      <TitleContainer>{props.title}</TitleContainer>
-      <DescriptionContainer>{props.desc}</DescriptionContainer>
+     
     </CardContainer>
   );
 };
